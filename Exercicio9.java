@@ -8,8 +8,16 @@ public class Exercicio9 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in); 
 
-		 //escreva seu código aqui
-
+		 //escreva seu código aqui		 System.out.print("Idade do nadador: ");
+		 int idade = input.nextInt();
+		 String categoria;
+		 if (idade < 5) categoria = "nenhuma";
+		 else if (idade <= 7) categoria = "infantil";
+		 else if (idade <= 10) categoria = "juvenil";
+		 else if (idade <= 15) categoria = "adolescente";
+		 else if (idade <= 30) categoria = "adulto";
+		 else categoria = "sênior";
+		 System.out.println("Categoria: " + categoria);
 		input.close();
 	}
 }

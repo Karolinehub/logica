@@ -8,6 +8,13 @@ import java.util.Scanner;
 		Scanner input = new Scanner(System.in); 
 
 		//escreva seu código aqui
+		 System.out.print("Ano de nascimento: ");
+		 int ano = input.nextInt();
+		 int idade = java.time.Year.now().getValue() - ano;
+		 if (idade >= 16)
+			 System.out.println("Pode votar este ano");
+		 else
+			 System.out.println("Não pode votar este ano");
 		
 		input.close();
 	}

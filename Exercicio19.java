@@ -8,8 +8,14 @@ public class Exercicio19 {
 
 		short a, b;
 		
-		 //escreva seu código aqui
-		
+		 //escreva seu código aqui		 System.out.print("Primeiro valor: ");
+		 a = input.nextShort();
+		 System.out.print("Segundo valor: ");
+		 b = input.nextShort();
+		 if (a > b)
+			 System.out.println("Maior: " + a);
+		 else
+			 System.out.println("Maior: " + b);		
 		input.close();
 	}
 }

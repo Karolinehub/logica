@@ -35,8 +35,19 @@ public class Exercicio13 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 
-		 //escreva seu código aqui
-		
+		 //escreva seu código aqui		 System.out.print("Horas extras no mês: ");
+		 double extras = input.nextDouble();
+		 System.out.print("Horas de falta no mês: ");
+		 double faltas = input.nextDouble();
+		 double H = extras - (0.67 * faltas);
+		 double minutos = H * 60;
+		 double grat;
+		 if (minutos < 600) grat = 100;
+		 else if (minutos <= 1200) grat = 200;
+		 else if (minutos <= 1800) grat = 300;
+		 else if (minutos <= 2400) grat = 400;
+		 else grat = 500;
+		 System.out.println("Gratificação: R$ " + grat);		
 		input.close();
 	}
 }

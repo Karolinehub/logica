@@ -9,6 +9,16 @@ public class Exercicio16 {
 		Scanner input = new Scanner(System.in); 
 
 		//escreva seu código aqui
+		 System.out.print("Salário de Carlos: R$ ");
+		 double carlos = input.nextDouble();
+		 double joao = carlos / 3.0;
+		 int meses = 0;
+		 while (joao < carlos) {
+			 carlos *= 1.02;
+			 joao *= 1.05;
+			 meses++;
+		 }
+		 System.out.println("Meses necessários: " + meses);
 		
 		input.close();
 	}

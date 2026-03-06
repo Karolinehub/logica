@@ -9,8 +9,19 @@ public class Exercicio28 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		
-		 //escreva seu código aqui
-		
+		 //escreva seu código aqui		 System.out.print("Ângulo 1: ");
+		 int ang1 = input.nextInt();
+		 System.out.print("Ângulo 2: ");
+		 int ang2 = input.nextInt();
+		 System.out.print("Ângulo 3: ");
+		 int ang3 = input.nextInt();
+		 if (ang1 == 90 || ang2 == 90 || ang3 == 90) {
+			 System.out.println("Retângulo");
+		 } else if (ang1 > 90 || ang2 > 90 || ang3 > 90) {
+			 System.out.println("Obtusângulo");
+		 } else {
+			 System.out.println("Acutângulo");
+		 }		
 		input.close();
 	}
 }

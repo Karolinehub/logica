@@ -11,6 +11,25 @@ public class Exercicio14 {
 		Scanner input = new Scanner(System.in); 
 
 		//escreva seu código aqui
+		 System.out.print("Idade: ");
+		 int idade = input.nextInt();
+		 System.out.print("Peso: ");
+		 double peso = input.nextDouble();
+		 int risco = 0;
+		 if (idade < 20) {
+			 if (peso <= 60) risco = 9;
+			 else if (peso <= 90) risco = 8;
+			 else risco = 7;
+		 } else if (idade <= 50) {
+			 if (peso <= 60) risco = 6;
+			 else if (peso <= 90) risco = 5;
+			 else risco = 4;
+		 } else {
+			 if (peso <= 60) risco = 3;
+			 else if (peso <= 90) risco = 2;
+			 else risco = 1;
+		 }
+		 System.out.println("Risco: " + risco);
 		
 		input.close();
 	}

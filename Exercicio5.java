@@ -7,7 +7,12 @@ public class Exercicio5 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		
-		//escreva seu código aqui
+		 System.out.print("Digite a temperatura em Celsius: ");
+		double c = input.nextDouble();
+		
+		double f = (9 * c + 160) / 5;
+		
+		System.out.println("Temperatura em Fahrenheit: " + f);
 		 
 		 input.close();
 	}

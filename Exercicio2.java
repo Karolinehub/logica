@@ -14,6 +14,19 @@ public class Exercicio2 {
 		double kmtotal;
 
 		 //escreva seu código aqui
+		 System.out.print("Distância inicial (km): ");
+		 kmi = input.nextDouble();
+		 System.out.print("Distância final (km): ");
+		 kmf = input.nextDouble();
+		 System.out.print("Total de litros consumidos: ");
+		 litros = input.nextDouble();
+		 kmtotal = kmf - kmi;
+		 if (litros != 0) {
+			 ConsumoMedio = kmtotal / litros;
+			 System.out.println("Consumo médio: " + ConsumoMedio + " km/l");
+		 } else {
+			 System.out.println("Litros não pode ser zero");
+		 }
 
 		input.close();
 	}

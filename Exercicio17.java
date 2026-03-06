@@ -19,6 +19,19 @@ public class Exercicio17 {
 		raiz = Math.sqrt(num);
 		
 		//escreva seu código aqui
+		 while (num > 0) {
+			 System.out.println("Valor: " + num);
+			 System.out.println("Quadrado: " + quadrado);
+			 System.out.println("Cubo: " + cubo);
+			 System.out.println("Raiz: " + raiz);
+			 System.out.print("Digite um número maior do que 0: ");
+			 num = input.nextInt();
+			 if (num > 0) {
+				 quadrado = Math.pow(num, 2);
+				 cubo = Math.pow(num, 3);
+				 raiz = Math.sqrt(num);
+			 }
+		 }
 			
 		input.close();
 	}

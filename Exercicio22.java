@@ -17,8 +17,12 @@ public class Exercicio22 {
 		System.out.print("Digite o terceiro valor: ");
 		num3 = input.nextInt();
 		
-		 //escreva seu código aqui
-		
+		 //escreva seu código aqui		 int a = num1, b = num2, c = num3;
+		 int temp;
+		 if (a > b) { temp = a; a = b; b = temp; }
+		 if (b > c) { temp = b; b = c; c = temp; }
+		 if (a > b) { temp = a; a = b; b = temp; }
+		 System.out.println("Ordem crescente: " + a + ", " + b + ", " + c);		
 		input.close();
 	}
 }

@@ -9,6 +9,15 @@ public class Exercicio15 {
 		Scanner input = new Scanner(System.in); 
 
 		//escreva seu código aqui
+		 System.out.print("Salário bruto: R$ ");
+		 double salario = input.nextDouble();
+		 double grat;
+		 if (salario <= 350) grat = 100;
+		 else if (salario <= 600) grat = 75;
+		 else if (salario <= 900) grat = 50;
+		 else grat = 35;
+		 double liquido = (salario + grat) - (0.07 * salario);
+		 System.out.println("Valor a receber: R$ " + liquido);
 		
 		input.close();
 	}

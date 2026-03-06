@@ -7,6 +7,11 @@ public class Exercicio3 {
 		Scanner input = new Scanner(System.in);
 		
 		 //escreva seu código aqui
+		 System.out.print("Digite um número: ");
+		 int valor = input.nextInt();
+		 if (valor > 20) {
+			 System.out.println(valor + " é maior que 20");
+		 }
 
 		input.close();
 	}

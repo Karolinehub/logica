@@ -8,8 +8,11 @@ public class Exercicio8 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in); 
 
-		 //escreva seu código aqui
-
+		 //escreva seu código aqui		 System.out.print("Quantidade de maçãs: ");
+		 int qtd = input.nextInt();
+		 double preco = qtd < 12 ? 0.30 : 0.25;
+		 double total = qtd * preco;
+		 System.out.println("Custo total: R$ " + total);
 		input.close();
 	}
 }

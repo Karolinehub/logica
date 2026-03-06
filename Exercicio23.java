@@ -13,6 +13,21 @@ public class Exercicio23 {
 		Scanner input = new Scanner(System.in);
 		
 		//escreva seu código aqui
+		 System.out.print("Número de lados: ");
+		 int lados = input.nextInt();
+		 System.out.print("Medida do lado (cm): ");
+		 double lado = input.nextDouble();
+		 if (lados == 3) {
+			 double area = (lado * lado * Math.sqrt(3)) / 4;
+			 System.out.println("TRIÂNGULO área=" + area);
+		 } else if (lados == 4) {
+			 double area = lado * lado;
+			 System.out.println("QUADRADO área=" + area);
+		 } else if (lados == 5) {
+			 System.out.println("PENTÁGONO");
+		 } else {
+			 System.out.println("Polígono não tratado");
+		 }
 		
 		input.close();
 	}

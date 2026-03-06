@@ -7,6 +7,12 @@ public class Exercicio10 {
 		Scanner input = new Scanner(System.in); 
 
 		//escreva seu código aqui
+		 System.out.print("Digite um inteiro: ");
+		 int valor = input.nextInt();
+		 if (valor % 2 == 0)
+			 System.out.println(valor + " é par");
+		 else
+			 System.out.println(valor + " é ímpar");
 		
 		input.close();
 	}

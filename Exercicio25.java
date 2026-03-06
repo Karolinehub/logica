@@ -9,7 +9,20 @@ public class Exercicio25 {
 		Scanner input = new Scanner(System.in);
 
 		 //escreva seu código aqui
-		
+		System.out.print("Digite o número de lados do polígono: ");
+		int lados = input.nextInt();
+
+		if (lados < 3) {
+			System.out.println("NÃO É UM POLÍGONO");
+		} else if (lados == 3) {
+			System.out.println("TRIÂNGULO");
+		} else if (lados == 4) {
+			System.out.println("QUADRADO");
+		} else if (lados == 5) {
+			System.out.println("PENTÁGONO");
+		} else {
+			System.out.println("POLÍGONO NÃO IDENTIFICADO");
+		}
 		input.close();
 	}
 }

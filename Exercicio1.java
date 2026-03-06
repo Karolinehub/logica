@@ -16,7 +16,17 @@ public class Exercicio1 {
 		 y = input.nextInt();   
 		 
 		 //escreva seu código aqui
-
+		 soma = x + y;
+		 subt = x - y;
+		 mult = x * y;
+		 div = y != 0 ? x / y : 0; // cuidado com divisão por zero
+		 System.out.println("Soma: " + soma);
+		 System.out.println("Subtração: " + subt);
+		 System.out.println("Multiplicação: " + mult);
+		 if (y != 0)
+			 System.out.println("Divisão: " + div);
+		 else
+			 System.out.println("Divisão: não é possível dividir por zero");
 		 input.close();
 	}
 }
